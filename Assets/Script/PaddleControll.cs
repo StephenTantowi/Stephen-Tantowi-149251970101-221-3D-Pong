@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PaddleControll : MonoBehaviour
 {
-    public Vector3 movement;
     public int speed;
     public KeyCode leftKey;
     public KeyCode rightKey;
