@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6664723527991001202
+--- !u!1 &7165058241821910541
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,12 +8,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6664723527991001211}
-  - component: {fileID: 6664723527991001208}
-  - component: {fileID: 6664723527991001209}
-  - component: {fileID: 6664723527991001214}
-  - component: {fileID: 6664723527991001215}
-  - component: {fileID: 7955008556663884052}
+  - component: {fileID: 7165058241821910532}
+  - component: {fileID: 7165058241821910535}
+  - component: {fileID: 7165058241821910534}
+  - component: {fileID: -7022838681971347939}
+  - component: {fileID: 7165058241821910528}
+  - component: {fileID: 5870268511899938667}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Ball
@@ -21,35 +21,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6664723527991001211
+--- !u!4 &7165058241821910532
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6664723527991001202}
+  m_GameObject: {fileID: 7165058241821910541}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.15, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_LocalPosition: {x: 0, y: 0.233, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &6664723527991001208
+--- !u!33 &7165058241821910535
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6664723527991001202}
+  m_GameObject: {fileID: 7165058241821910541}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &6664723527991001209
+--- !u!23 &7165058241821910534
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6664723527991001202}
+  m_GameObject: {fileID: 7165058241821910541}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -84,46 +84,46 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &6664723527991001214
+--- !u!114 &-7022838681971347939
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6664723527991001202}
+  m_GameObject: {fileID: 7165058241821910541}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a29910c14b8f394b8712f1d88757eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: -10, y: 0, z: -10}
-  rig: {fileID: 7955008556663884052}
---- !u!135 &6664723527991001215
+  speed: {x: 0, y: 0, z: 0}
+  rig: {fileID: 0}
+--- !u!135 &7165058241821910528
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6664723527991001202}
-  m_Material: {fileID: 13400000, guid: f551ada39e0f4fd41b9cf2ab58b43c3a, type: 2}
+  m_GameObject: {fileID: 7165058241821910541}
+  m_Material: {fileID: 13400000, guid: 215e51bbc3a90fe4b88afbaab45df094, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &7955008556663884052
+--- !u!54 &5870268511899938667
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6664723527991001202}
+  m_GameObject: {fileID: 7165058241821910541}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_AngularDrag: 0
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 4
   m_CollisionDetection: 0

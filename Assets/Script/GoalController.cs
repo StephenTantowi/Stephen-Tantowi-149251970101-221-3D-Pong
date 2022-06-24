@@ -24,7 +24,7 @@ public class GoalController : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other == ball)
+        if (other.gameObject.CompareTag("Ball"))
         {
             if (p1 == true)
             {

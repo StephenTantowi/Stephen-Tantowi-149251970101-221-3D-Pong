@@ -30,7 +30,9 @@ public class BallSpawn : MonoBehaviour
         int rnd = Random.Range(0, spawn.Count);
         if(jumBall <= 5)
         {
-            Instantiate(ball, spawn[rnd].transform.position, Quaternion.identity);
+            GameObject ballSp = Instantiate(ball, spawn[rnd].transform.position, Quaternion.identity);
+            Rigidbody rb = ballSp.GetComponent<Rigidbody>();
+            rb.velocity = new Vector3(10,0,10);
         }
     }    
 }

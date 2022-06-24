@@ -4,17 +4,11 @@ using UnityEngine;
 
 public class BallControll : MonoBehaviour
 {
-    public Vector3 speed;
-    public Rigidbody rig;
-    // Start is called before the first frame update
-    void Start()
+    private void OnCollisionEnter(Collision collision)
     {
-        rig.velocity = speed;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        if(collision.gameObject.CompareTag("Wall"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
